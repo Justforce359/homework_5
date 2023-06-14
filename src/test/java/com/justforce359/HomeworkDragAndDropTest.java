@@ -23,8 +23,9 @@ public class HomeworkDragAndDropTest {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         SelenideElement sourceA = $("#column-a");
         SelenideElement targetB = $("#column-b");
-        $(sourceA).dragAndDropTo($(targetB));
-        $("#column-a").shouldHave(text("B"));
+        sourceA.dragAndDropTo(targetB);
+        sourceA.shouldHave(text("B"));
+        targetB.shouldHave(text("A"));
 
     }
 }

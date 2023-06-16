@@ -1,32 +1,16 @@
+HELP.md
+build/
+!**/src/main/**
+!**/src/test/**
+
 ### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-.gradle
 .idea
-build
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+*.iws
+*.iml
+*.ipr
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+### Gradle ###
+.gradle
 
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
+### Logs ###
+*.log
